@@ -6,7 +6,7 @@ const logger = createLogger({
     format.timestamp(),
     format.json()
   ),
-  defaultMeta: { service: 'api-rate-limiter' },
+  defaultMeta: { service: 'express-api-rate-limiter' },
   transports: [
     new transports.File({ filename: 'error.log', level: 'error' }),
     new transports.File({ filename: 'combined.log' })
