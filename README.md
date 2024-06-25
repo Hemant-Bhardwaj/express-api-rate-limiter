@@ -13,8 +13,8 @@ A sophisticated API rate limiter that allows developers to define complex polici
 
 # Installation
 
-```
-npm install api-rate-limiter
+```bash
+npm install express-api-rate-limiter
 ```
 
 # Configuration
@@ -79,7 +79,7 @@ You can manually test the rate limiter using Postman or cURL:
 
 1. Start your application:
 
-```
+```bash
 node index.js
 ```
 
@@ -94,12 +94,12 @@ node index.js
 
 1. Start your application:
 
-```
+```bash
 node index.js
 ```
 
 2. Send multiple requests using cURL:
-```
+```bash
 for i in {1..60}; do curl -H "x-user-id: user123" -i http://localhost:3000/; done
 ```
 You should see 429 Too Many Requests responses after exceeding the limit.
@@ -107,7 +107,7 @@ You should see 429 Too Many Requests responses after exceeding the limit.
 ## Automated Testing
 
 Install the necessary testing libraries:
-```
+```bash
 npm install mocha chai supertest --save-dev
 ```
 
@@ -177,7 +177,7 @@ describe('Rate Limiter Middleware', () => {
 
 Run your tests:
 
-```
+```bash
 npm test
 ```
 
